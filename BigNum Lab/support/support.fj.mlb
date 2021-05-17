@@ -1,0 +1,15 @@
+local
+  $(SML_LIB)/basis/basis.mlb
+
+  ../lib/210lib.fj.mlb
+
+  ./Bit.sml
+  ./BIGNUM.sig
+  ./MkBitSeqGen.sml
+  ./MkBitPackSeqBignum.sml
+in
+  structure Bit
+  signature BIGNUM
+  functor MkBitSeqGen
+  functor MkBitPackSeqBignum
+end
